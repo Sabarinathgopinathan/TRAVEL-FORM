@@ -14,30 +14,32 @@ function validate() {
     } else if (!nx.test(n)) {
         alert("name is not in format");
         return false;
-    } else if (
-        document.getElementById("agree").checked == false &&
-        document.getElementById("disagree").checked == false
-    ) {
-        alert("agree or disagree");
+    } else if (!px.test(p)) {
+        alert("please select the number of people");
         return false;
     } else if (pla == 0) {
         alert("choose your destination");
-        return false;
-    } else if (!px.test(p)) {
-        alert("please select the number of people");
         return false;
     } else if (!ex.test(e)) {
         alert("email is not according to format");
         return false;
     } else if (
         document.getElementById("c-1").checked == false &&
-        document.getElementById("c-2").checked &&
-        document.getElementById("c-3").checked
+        document.getElementById("c-2").checked == false &&
+        document.getElementById("c-3").checked == false
     ) {
         alert("please select atleast one checkbox");
         return false;
     } else if (c == "") {
         alert("select travel date");
         return false;
+    } else if (
+        document.getElementById("agree").checked == false &&
+        document.getElementById("disagree").checked == false
+    ) {
+        alert("agree or disagree");
+        return false;
+    } else {
+        return true;
     }
 }
