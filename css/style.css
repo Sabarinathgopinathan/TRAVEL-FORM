@@ -1,0 +1,35 @@
+/* Author: Sabarinath G */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    min-height: 100vh;
+    background-color: rgb(170 165 196 / 88%);
+}
+.content {
+    width: fit-content;
+    height: 100%;
+    background-color: rgb(156 128 212 / 88%);
+    border-radius: 25px;
+}
+.content div {
+    padding: 8px;
+    text-align: start;
+}
+.col {
+    background-color: #dd0eac;
+    color: white;
+}
+sup {
+    color: red;
+}
+label {
+    font-size: 16px;
+    font-weight: 700;
+    /* color: rgba(10, 135, 189, 0.663); */
+}
+
+@media screen and (max-width: 576px) {
+}

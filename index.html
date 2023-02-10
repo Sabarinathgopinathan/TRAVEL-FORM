@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel form</title>
+        <!-- css bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+        "
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container-fluid main row align-items-center m-0">
+            <div class="content container-fluid p-2">
+                <h1>TRAVEL RESERVATION FORM</h1>
+                <h3 class="text-center"><sup>*</sup>denotes mandatory</h3>
+                <form
+                    action="one.html"
+                    target="_blank"
+                    onsubmit="return validate()"
+                >
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >Full name<sup>*</sup>:</label
+                        >
+                        <input
+                            class="col-sm-6 rounded-2"
+                            type="text"
+                            id="name"
+                        />
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >Email address<sup>*</sup>:</label
+                        >
+                        <input
+                            class="col-sm-6 rounded-2"
+                            type="text"
+                            id="Email"
+                        />
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >Select Tour package<sup>*</sup>:</label
+                        >
+                        <select class="col-sm-6 rounded-2" name="" id="places">
+                            <option value="0">select your destination</option>
+                            <option value="1">Goa</option>
+                            <option value="2">Kerala</option>
+                            <option value="3">TamilNadu</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >Arrival date<sup>*</sup>:</label
+                        >
+                        <input
+                            class="col-sm-6 rounded-2"
+                            type="date"
+                            id="cal"
+                            placeholder="m/d/y"
+                        />
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >Number of persons<sup>*</sup>:</label
+                        >
+                        <input
+                            class="col-sm-6 rounded-2"
+                            type="text"
+                            id="people"
+                        />
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >What would you want to avail?<sup>*</sup></label
+                        >
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="">Boarding</label>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <input type="checkbox" name="" id="c-1" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="">Fooding</label>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <input type="checkbox" name="" id="c-2" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="">Sight Seeing</label>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <input type="checkbox" name="" id="c-3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-4" for="">Discount Coupon</label>
+                        <input class="col-6 rounded-2" type="text" />
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4" for=""
+                            >Terms and conditions<sup>*</sup></label
+                        >
+                        <div class="col-sm-3">
+                            <input type="radio" id="agree" name="TC" />
+                            <label for="">I agree</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="radio" id="disagree" name="TC" />
+                            <label for="">I disagree</label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <input
+                            class="btn col"
+                            type="submit"
+                            value="complete reservation"
+                        />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- jquery cdn
+         <script
+         src="https://code.jquery.com/jquery-3.6.3.min.js"
+         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+         crossorigin="anonymous"
+     ></script> -->
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+         "></script>
+        <!-- js -->
+        <script src="JS/script.js"></script>
+    </body>
+</html>
